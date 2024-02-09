@@ -37,8 +37,34 @@ la censure est importante car elle influence sur l'estimation de la survie ainsi
   ### comment lire une curbe KM
   ![KM explanation](https://github.com/dinaOuahbi/Statistical-issues/blob/main/data/1-s2.0-S0022202X15373292-gr2_lrg.jpg)
 
-### Notre question relative au script {}
+##### Notre question est :
 Est ce qu'une expression elevée de TP53 influence le pronostique chez des patients atteint de cancer de sein ? 
+
+
+## single cell trajectory using monocle3
+### C'est quoi un pseudo temps ? 
+unité de progression d'une cellule dans un procesus de differentiation cellulaire
+donc une cellule dans un etat initiale de differentiation a tendance a avoir un faible pseudotime et vis vers ca ! 
+
+### Quand utiliser monocle ? :
+- Etude d'un mecanisme cellulaire
+- cellules issue de differents echantillons
+- utiliser surtout pour comparer des cellules dans un seul et unique cluster (eg, comparer les differents LB)
+- ...
+
+### Workfow steps
+- pre process
+- t sne / umap
+- cluster cells
+- compare cluster (marker)
+- trajectory analysis
+
+### Mococle a besoin de :
+- matrice d'expression (r=gene / c=cells)
+- mege metadata
+- cell metadata
+  
+
 
 
 
