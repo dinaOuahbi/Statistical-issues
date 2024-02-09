@@ -1,6 +1,8 @@
 ## How to load data from GDC ? (tcga_data_download.R)
-<img src="https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/methData.png" width="350" height="400">
-<img src="https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/mafData.png" width="350" height="400">
+<div style="display: flex;">
+    <img src="https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/methData.png" width="350" height="400">
+    <img src="https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/mafData.png" width="350" height="400">
+</div>
 
 ## Survival analysis (KM_survival.R)
 La proba pour que des patients survivent apres un certains temps t qui est le temps consacré à l'etude de ses patients. 
