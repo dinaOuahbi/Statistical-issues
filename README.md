@@ -1,5 +1,5 @@
 ## How to load data from GDC ? (tcga_data_download.R)
-![KM explanation](https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/methData.png | width="200")
+![KM explanation](https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/methData.png  | width=100)
 ![KM explanation](https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/mafData.png)
 
 ## Survival analysis (KM_survival.R)
