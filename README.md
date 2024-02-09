@@ -1,5 +1,9 @@
+## How to load data from GDC ? (tcga_data_download.R)
+![KM explanation](https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/methData.png)
+![KM explanation](https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/mafData.png)
 
-la proba pour que des patients survivent apres un certains temps t qui est le temps consacré à l'etude de ses patients. 
+## Survival analysis (KM_survival.R)
+La proba pour que des patients survivent apres un certains temps t qui est le temps consacré à l'etude de ses patients. 
 nous cherchons les variables qui peuvent influencer la survie globale ou sans progression
 calcule du taux d'occurence d'un evennement (la mort par exemple) durant un delai
 
