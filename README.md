@@ -1,7 +1,7 @@
 ## How to load data from GDC ? (tcga_data_download.R)
 <div style="display: flex;">
-    <img src="https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/methData.png" width="350" height="400">
-    <img src="https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/mafData.png" width="350" height="400">
+    <img src="https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/methData.png" width="400" height="400">
+    <img src="https://github.com/dinaOuahbi/Statistical-issues/blob/main/results/mafData.png" width="400" height="400">
 </div>
 
 ## Survival analysis (KM_survival.R)
