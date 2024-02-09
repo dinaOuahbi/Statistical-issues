@@ -2,6 +2,8 @@
 la proba pour que des patients survivent apres un certains temps t qui est le temps consacré à l'etude de ses patients. 
 nous cherchons les variables qui peuvent influencer la survie globale ou sans progression
 calcule du taux d'occurence d'un evennement (la mort par exemple) durant un delai
+
+### A quoi repend on dans une analyse de survie ? 
 - la proba pour qu'un patient survie apres 5 ans
 - quel sont les facteurs qui influence la survie
 - quel est le traitement le plus efficasse en comparant deux groupes de patients ayant pris deux trt differents
@@ -28,4 +30,42 @@ la censure est importante car elle influence sur l'estimation de la survie ainsi
  
   ### comment lire une curbe KM
   ![KM explanation](https://github.com/dinaOuahbi/Statistical-issues/blob/main/data/1-s2.0-S0022202X15373292-gr2_lrg.jpg)
+
+### Notre question relative au script {}
+Est ce qu'une expression elevée de TP53 influence le pronostique chez des patients atteint de cancer de sein ? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
