@@ -65,6 +65,65 @@ Une mesure clé qui résume la variabilité d’une statistique d’échantillon
 
 ### Le boostrap
 
+Exemple d'amorçage : Un échantillon prélevé avec remplacement à partir d’un ensemble de données observées.
+Rééchantillonnage : Le processus de prélèvement d’échantillons répétés à partir de données observées ; comprend à la fois les procédures d'amorçage et de permutation (réorganisation).
+
+L'algorithme de rééchantillonnage bootstrap de la moyenne, pour un échantillon de taille n , est le suivant :
+
+- Dessinez un exemple de valeur, enregistrez-le, puis remplacez-le.
+- Répétez n fois.
+- Enregistrez la moyenne des n valeurs rééchantillonnées.
+- Répétez les étapes 1 à 3 R fois.
+- Utilisez les résultats R pour :
+    - Calculez leur écart type (cela estime l’erreur type moyenne de l’échantillon).
+    - Produisez un histogramme ou un boxplot.
+    - Trouvez un intervalle de confiance.
+
+le Bagging : l'execution plusieur fois d'un arbe de decision (classifier ou regressor) sur des echantillon boostrap
+
+Donc le BOOSTRAP nous informe simplement du comportement d’un grand nombre d’échantillons supplémentaires s’ils étaient tirés d’une population comme notre échantillon d’origine.
+
+CCL : 
+Le bootstrap (échantillonnage avec remplacement à partir d’un ensemble de données) est un outil puissant pour évaluer la variabilité d’une statistique d’échantillon.
+Le bootstrap peut être appliqué de la même manière dans une grande variété de circonstances, sans étude approfondie des approximations mathématiques des distributions d'échantillonnage.
+Cela nous permet également d'estimer les distributions d'échantillonnage pour les statistiques pour lesquelles aucune approximation mathématique n'a été développée.
+Lorsqu’elle est appliquée aux modèles prédictifs, l’agrégation de plusieurs prédictions d’échantillons bootstrap (bagging) surpasse l’utilisation d’un seul modèle.
+
+### Intervalles de confiance
+permet de comprendre l'erreur potentielle dans une estimation d'echantillon
+
+Un niveau de confiance : Pourcentage d’intervalles de confiance, construits de la même manière à partir de la même population, qui devraient contenir la statistique d’intérêt.
+Points de terminaison de l'intervalle : Le haut et le bas de l’intervalle de confiance.
+
+IC : sont dans un niveau de couverture exprimé en %
+eg, un IC de 90% est un interval qui englobe les 90% centraux de la distribution d'echantillonnage boostrap d'un echantillon statistique
+
+niveau de confiance est le % associé à l'intervalle de confiance. plus ce niveau est elevé, plus l'interval est large, et donc plus l'incertitude est grande. cela va de meme avec une petite taille de l'echantillon
+
+les datasientist voudront connaitre l'IC pour savoir si un echantillon plus large est necessaire.
+
+CLL :
+Les intervalles de confiance constituent la manière habituelle de présenter des estimations sous forme de plage d'intervalles.
+Plus vous disposez de données, moins une estimation d’échantillon sera variable.
+Plus le niveau de confiance que vous pouvez tolérer est bas, plus l’intervalle de confiance sera étroit.
+Le bootstrap est un moyen efficace de construire des intervalles de confiance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
