@@ -108,8 +108,93 @@ Plus vous disposez de données, moins une estimation d’échantillon sera varia
 Plus le niveau de confiance que vous pouvez tolérer est bas, plus l’intervalle de confiance sera étroit.
 Le bootstrap est un moyen efficace de construire des intervalles de confiance.
 
+### Distribution normale
+
+sous forme de clochela
+erreur : difference entre un point de données et une valeur predite ou moyenne
+standardiser : soustraire la moyenne et diviser par l'ecart type. Conversion des données en scores z
+score z : resultat de la normalisation d'un point de donnée individuel
+norme normal : distribution normale avec moyenne = 0 et ecart type = 1
+qq-plot : Un tracé pour visualiser à quel point une distribution d'échantillon est proche d'une distribution spécifiée, par exemple la distribution normale.
+
+L'utilité de la distribution normale découle du fait que de nombreuses statistiques sont normalement distribuées dans leur distribution d'échantillonnage.
+La distribution normale est également appelée distribution gaussienne en l'honneur de Carl Friedrich Gauss
+les unité dans l'axe des x sont exprimées en termes d'ecart type par rapport a la moyenne
+
+le qq plot classe les scores z de bas en haut et les traces sur l'axe des y. Si les points se situent à peu près sur la ligne diagonale, la distribution de l'échantillon peut alors être considérée comme proche de la normale
+ 
+CCL :
+La distribution normale était essentielle au développement historique des statistiques, car elle permettait une approximation mathématique de l'incertitude et de la variabilité.
+Bien que les données brutes ne soient généralement pas distribuées normalement, des erreurs le sont souvent, tout comme les moyennes et les totaux dans les grands échantillons.
+Pour convertir des données en scores z , vous soustrayez la moyenne des données et divisez par l'écart type ; vous pouvez ensuite comparer les données à une distribution normale.
+
+### Distributions à longue traine
+Queue : Partie longue et étroite d'une distribution de fréquence, où des valeurs relativement extrêmes se produisent à basse fréquence.
+Fausser : Où une queue d’une distribution est plus longue que l’autre.
+
+La distribution normal est importante mais ne caracterise pas les données brutes qui sont parfois tres asymetrique
+Ces données brute auront donc un qq plot avec des points en dessous et en dessus de la ligne pour des valeur faible et forte respectivement.
+
+CCL : 
+La plupart des données ne sont pas normalement distribuées.
+Supposer une distribution normale peut conduire à une sous-estimation des événements extrêmes (« cygnes noirs »).
+
+### Distribution de Student (en T)
+La distribution t est en fait une famille de distributions ressemblant à la distribution normale mais avec des queues plus épaisses.
+Plus l’échantillon est grand, plus la distribution t prend une forme normale.
+La distribution t est largement utilisée comme base de référence pour la distribution des moyennes d'échantillon, les différences entre deux moyennes d'échantillon, les paramètres de régression, etc.
 
 
+### Distribution binomiale
+Procès : Un événement avecun résultat discret (par exemple, un tirage au sort).
+Succès : Le résultat intéressant pour un procès
+Binôme : Avoir deux résultats.
+Essai binomial : Un essai avec deux résultats.
+Distribution binomiale : Répartition du nombre de réussites dans x essais (Distribution de Bernoulli)
+
+Par exemple, lancer une pièce de monnaie 10 fois est une expérience binomiale avec 10 essais, chaque essai ayant deux résultats possibles (pile ou face)
+Il est classique en statistique d’appeler le résultat « 1 » le résultat de la réussite ; il est également courant d’attribuer « 1 » aux résultats les plus rares
+
+exemple de question auquel repond une distribution de Bernoulli : Si la probabilité qu'un clic se transforme en vente est de 0,02, quelle est la probabilité d'observer 0 vente en 200 clics ?
+
+CCL : 
+Les résultats binomiaux sont importants à modéliser, car ils représentent, entre autres, des décisions fondamentales (acheter ou ne pas acheter, cliquer ou ne pas cliquer, survivre ou mourir, etc.).
+Un essai binomial est une expérience avec deux résultats possibles : l’un avec une probabilité p et l’autre avec une probabilité 1 – p .
+Avec n grand et à condition que p ne soit pas trop proche de 0 ou 1, la distribution binomiale peut être approximée par la distribution normale.
+
+### Distribution du chi carré
+statistique du chi carré. Il s'agit de la différence entre les valeurs observées et attendues, divisée par la racine carrée de la valeur attendue, au carré, puis additionnée pour toutes les catégories.
+ Il est utile pour déterminer si plusieurs traitements (un « test A/B/C… ») diffèrent les uns des autres dans leurs effets.
+si chi2 est petite, cela indique que l'ensemble de compte suit de près la distribution attendue
+
+CCL : 
+La distribution du chi carré concerne généralement le nombre de sujets ou d'éléments entrant dans des catégories.
+La statistique du chi carré mesure l’ampleur de l’écart par rapport à ce à quoi on s’attendrait dans un modèle nul.
+
+### Distribution F
+imaginant si on compare differents traitements sur differents champs (qui sont nos groupes) on prend une mesure moyenne pour chaque groupe qui est sous forme de valeur continue, puis on compare ces moyennes entres elles (dans quelle mesure la difference entre deux moyenne est supperieur a une variation aleatoire normal) cette statistique generée est appelé valeur F. cette comparaison est appelé analyse de variance ANOVA.
+
+CCL : 
+La distribution F est utilisée avec des expériences et des modèles linéaires impliquant des données mesurées.
+La statistique F compare la variation due aux facteurs d’intérêt à la variation globale.
+
+### Distribution de poisson
+Lambda : La vitesse (par unité de temps ou d'espace) à laquelle les événements se produisent dans un interval de temps ou d'espace specifié
+La distribution de Poisson nous indique la distribution des événements (survenu d'une infection) par unité de temps ou d'espace lorsque nous échantillonnons plusieurs de ces unités
+
+la variance d'une distribution de poisson c'est le parametre Lambda.
+
+### Distribution exponentielle
+mesure le temps entre deux evennement. 
+eg, temps entre les visites d'un site Internet ou entre les voitures arrivant à un poste de péage
+
+### Estimation du taux d'échec
+Dans de nombreuses applications, le taux d'événements,lambda est connu ou peut être estimé à partir de données antérieures.
+
+CCL : 
+Pour les événements qui se produisent à un rythme constant, le nombre d'événements par unité de temps ou d'espace peut être modélisé sous la forme d'une distribution de Poisson.
+Vous pouvez également modéliser le temps ou la distance entre un événement et le suivant sous forme de distribution exponentielle.
+Un taux d'événements changeant au fil du temps (par exemple, une probabilité croissante de défaillance d'un appareil) peut être modélisé avec la distribution de Weibull.
 
 
 
